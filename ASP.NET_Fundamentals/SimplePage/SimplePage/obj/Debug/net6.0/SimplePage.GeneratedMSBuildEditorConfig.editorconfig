@@ -19,8 +19,16 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/SoftUni/SoftUni-C-Sharp-Web/ASP.NET_Fundamentals/SimplePage/SimplePage/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/SoftUni/SoftUni-C-Sharp-Web/ASP.NET_Fundamentals/SimplePage/SimplePage/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SoftUni/SoftUni-C-Sharp-Web/ASP.NET_Fundamentals/SimplePage/SimplePage/Views/Home/Numbers.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxOdW1iZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/SoftUni/SoftUni-C-Sharp-Web/ASP.NET_Fundamentals/SimplePage/SimplePage/Views/Home/Privacy.cshtml]
