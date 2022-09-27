@@ -15,6 +15,7 @@ namespace SimplePage.Controllers
 
         public IActionResult Index()
         {
+            ViewBag.Message = "Hello World!";
             return View();
         }
 
