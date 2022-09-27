@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SimplePage.Models;
 using System.Diagnostics;
+using System.Numerics;
 
 namespace SimplePage.Controllers
 {
@@ -32,6 +33,13 @@ namespace SimplePage.Controllers
 
         public IActionResult Numbers()
         {
+            return View();
+        }
+
+        public IActionResult NumbersToN(int number = 3)
+        {
+            ViewBag.Message = "Nums 1 to " + number;
+            ViewBag.Number = number;
             return View();
         }
 
