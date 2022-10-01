@@ -1,0 +1,30 @@
+﻿@model IEnumerable<WebShopDemo.Core.Models.ProductDto>
+  
+@{  
+    ViewBag.Title = "Index";
+}  
+  
+<h3>Products</h3>  
+<table border="0" class="table table-hover table-responsive">  
+    <thead>  
+        <tr class="bg-success">  
+            @*<th>Product ID</th>  *@
+            <th class="text-light text-center">Product Name</th>  
+            <th class="text-light text-center">Price</th>
+            <th class="text-light text-center">Quantity</th>
+            <th class="text-light text-center"></th>
+        </tr>  
+    </thead>  
+    <tbody>
+        @foreach(var item in Model)
+        {
+            <tr>
+                @*<td>@item.Id</td>*@
+                <td class="text-center">@item.Name</td>
+                <td class ="text-center">@item.Price</td>
+                <td class="text-center">@item.Quantity</td>
+                <td class="table-borderless text-center"><button class="btn btn-warning text-black">Buy</button></td>
+            </tr>
+        }
+    </tbody>  
+</table>  

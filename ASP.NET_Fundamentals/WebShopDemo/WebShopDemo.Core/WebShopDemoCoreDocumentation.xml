@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebShopDemo.Core</name>
+    </assembly>
+    <members>
+        <member name="T:WebShopDemo.Core.Contracts.IProductService">
+            <summary>
+            Manipulates product data
+            </summary>
+        </member>
+        <member name="M:WebShopDemo.Core.Contracts.IProductService.GetAll">
+            <summary>
+            Gets all products
+            </summary>
+            <returns>List of products</returns>
+        </member>
+        <member name="T:WebShopDemo.Core.Data.ApplicationDbContext">
+            <summary>
+            Application Db Context class
+            </summary>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.ApplicationDbContext.#ctor(Microsoft.EntityFrameworkCore.DbContextOptions{WebShopDemo.Core.Data.ApplicationDbContext})">
+            <summary>
+            Initialize Application Db Context
+            </summary>
+            <param name="options"></param>
+        </member>
+        <member name="T:WebShopDemo.Core.Models.ProductDto">
+            <summary>
+            Product model
+            </summary>
+        </member>
+        <member name="P:WebShopDemo.Core.Models.ProductDto.Id">
+            <summary>
+            Product identifier
+            </summary>
+        </member>
+        <member name="P:WebShopDemo.Core.Models.ProductDto.Name">
+            <summary>
+            Product name
+            </summary>
+        </member>
+        <member name="P:WebShopDemo.Core.Models.ProductDto.Price">
+            <summary>
+            Product price
+            </summary>
+        </member>
+        <member name="P:WebShopDemo.Core.Models.ProductDto.Quantity">
+            <summary>
+            Qiantity of product
+            </summary>
+        </member>
+        <member name="T:WebShopDemo.Core.Services.ProductService">
+            <summary>
+            Manipulates product data
+            </summary>
+        </member>
+        <member name="M:WebShopDemo.Core.Services.ProductService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Inversion of control (IoC)
+            </summary>
+            <param name="_config">Application configuration</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Services.ProductService.GetAll">
+            <summary>
+            Gets all products
+            </summary>
+            <returns>List of products</returns>
+        </member>
+    </members>
+</doc>

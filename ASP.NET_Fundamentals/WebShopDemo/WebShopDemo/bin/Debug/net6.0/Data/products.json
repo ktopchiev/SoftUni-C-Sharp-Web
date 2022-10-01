@@ -1,0 +1,32 @@
+[
+  {
+    "id": "4e7c21e3-87fe-443c-9b53-8b0b39f056e6",
+    "name": "Beer",
+    "price": "2",
+    "quantity": "100"
+  },
+  {
+    "id": "ec0dbfb2-e10e-4789-9d8b-4e1a6ab4e78a",
+    "name": "Chips",
+    "price": "5",
+    "quantity": "20"
+  },
+  {
+    "id": "99472f1a-9e30-4d5b-8e80-1f443d2c5b01",
+    "name": "Toothpaste",
+    "price": "8",
+    "quiantity": "10"
+  },
+  {
+    "id": "892aa474-5871-449d-8993-625bab907412",
+    "name": "Newspaper",
+    "price": "1",
+    "quiantity": "50"
+  },
+  {
+    "id": "e59218b9-f094-4d98-ac52-6105724f167f",
+    "name": "Elephant",
+    "price": "1000",
+    "quiantity": "1"
+  }
+]
