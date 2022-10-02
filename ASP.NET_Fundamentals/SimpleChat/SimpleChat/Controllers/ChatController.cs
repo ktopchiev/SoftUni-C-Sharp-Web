@@ -19,11 +19,13 @@ namespace ChatApp.Controllers
         /// <returns></returns>
         public IActionResult Show()
         {
+            //Return empty view with form
             if (Messages.Count < 1)
             {
-                return View(new ChatViewModel());
+               return View(new ChatViewModel());
             }
 
+            //Provide to view if data exist
             var chatModel = new ChatViewModel()
             {
                 Messages = Messages
@@ -40,7 +42,7 @@ namespace ChatApp.Controllers
 
         [HttpPost]
         public IActionResult Send(ChatViewModel chat)
-        {
+       {
             var newMessage = chat.CurrentMessage;
 
             Messages.Add(new KeyValuePair<string, string>
