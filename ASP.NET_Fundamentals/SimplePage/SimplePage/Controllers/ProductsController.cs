@@ -42,7 +42,7 @@ namespace SimplePage.Controllers
         }
 
         /// <summary>
-        /// Shows all products
+        /// Shows all products. Also returns certain product if ?keyword="???" is provided in the url.
         /// </summary>
         /// <returns></returns>
         [ActionName("My-Products")]
