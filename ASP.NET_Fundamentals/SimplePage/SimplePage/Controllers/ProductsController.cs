@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Net.Http.Headers;
 using SimplePage.Models;
+using System.Text;
 using System.Text.Json;
 
 namespace SimplePage.Controllers
@@ -59,6 +61,19 @@ namespace SimplePage.Controllers
             }
 
             return Content(text);
+        }
+
+        public IActionResult AllAsTextFile()
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (var pr in products)
+            {
+                sb.AppendLine($"Product {pr.Id}: {pr.Name} - {pr.Price:f2}lv");
+            }
+
+            Response.Headers.Add(HeaderNames.ContentDisposition,
+                @"attachment;filename=products.txt");
+            return File(Encoding.UTF8.GetBytes(sb.ToString().TrimEnd()), "text/plain");
         }
 
         public IActionResult ById(int id)

@@ -2323,11 +2323,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\karlo\\Desktop\\WebShopDemo\\WebShopDemo.Core\\WebShopDemo.Core.csproj",
+      "projectUniqueName": "D:\\SoftUni\\SoftUni-C-Sharp-Web\\ASP.NET_Fundamentals\\WebShopDemo\\WebShopDemo.Core\\WebShopDemo.Core.csproj",
       "projectName": "WebShopDemo.Core",
-      "projectPath": "C:\\Users\\karlo\\Desktop\\WebShopDemo\\WebShopDemo.Core\\WebShopDemo.Core.csproj",
+      "projectPath": "D:\\SoftUni\\SoftUni-C-Sharp-Web\\ASP.NET_Fundamentals\\WebShopDemo\\WebShopDemo.Core\\WebShopDemo.Core.csproj",
       "packagesPath": "C:\\Users\\karlo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\karlo\\Desktop\\WebShopDemo\\WebShopDemo.Core\\obj\\",
+      "outputPath": "D:\\SoftUni\\SoftUni-C-Sharp-Web\\ASP.NET_Fundamentals\\WebShopDemo\\WebShopDemo.Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

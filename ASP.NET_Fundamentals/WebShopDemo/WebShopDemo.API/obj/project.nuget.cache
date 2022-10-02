@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LGKbuK7g9VxyTxW607kjkaHTtAEOA+JdUKpVc6JBv2m4VtUel+SKr/bODc0NQFRAzJzPFpGtBG7SduQFaSP7+Q==",
+  "dgSpecHash": "KjaaEkuC/Adn6G4X940cVeYN/eiLX4TtQs3rg0NZLzhAs+B3/nn7Cg1HTpHRjJy1IeIFGtWR0d0pfKNY/TrluA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\karlo\\Desktop\\WebShopDemo\\WebShopDemo.API\\WebShopDemo.API.csproj",
+  "projectFilePath": "D:\\SoftUni\\SoftUni-C-Sharp-Web\\ASP.NET_Fundamentals\\WebShopDemo\\WebShopDemo.API\\WebShopDemo.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\karlo\\.nuget\\packages\\efcore.namingconventions\\6.0.0\\efcore.namingconventions.6.0.0.nupkg.sha512",
     "C:\\Users\\karlo\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

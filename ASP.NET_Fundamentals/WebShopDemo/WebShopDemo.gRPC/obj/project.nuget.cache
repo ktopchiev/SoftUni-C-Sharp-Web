@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2qOF9bVDowzQ8LaGyk7bNaAfGdn3ISmj/USLzkUKEdueA+pi5cn1dCVVVP6p6a4MsmuH2eeHEdawk6FSLUItWg==",
+  "dgSpecHash": "YZzghjDU47gRXbXh7l3OfEaqoUqOxlq22f9FXTZKWTXf4pYI/Tn9CVLZ9KurWf+3U6R9mwAQHfcvmR7ml9WDGA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\karlo\\Desktop\\WebShopDemo\\WebShopDemo.gRPC\\WebShopDemo.gRPC.csproj",
+  "projectFilePath": "D:\\SoftUni\\SoftUni-C-Sharp-Web\\ASP.NET_Fundamentals\\WebShopDemo\\WebShopDemo.gRPC\\WebShopDemo.gRPC.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\karlo\\.nuget\\packages\\efcore.namingconventions\\6.0.0\\efcore.namingconventions.6.0.0.nupkg.sha512",
     "C:\\Users\\karlo\\.nuget\\packages\\google.protobuf\\3.18.0\\google.protobuf.3.18.0.nupkg.sha512",
