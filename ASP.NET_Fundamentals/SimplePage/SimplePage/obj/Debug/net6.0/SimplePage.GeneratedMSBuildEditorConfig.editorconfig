@@ -39,12 +39,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/SoftUni/SoftUni-C-Sharp-Web/ASP.NET_Fundamentals/SimplePage/SimplePage/Views/Products/All.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQWxsLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [D:/SoftUni/SoftUni-C-Sharp-Web/ASP.NET_Fundamentals/SimplePage/SimplePage/Views/Products/ById.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcQnlJZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/SoftUni/SoftUni-C-Sharp-Web/ASP.NET_Fundamentals/SimplePage/SimplePage/Views/Products/My-Products.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdHNcTXktUHJvZHVjdHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/SoftUni/SoftUni-C-Sharp-Web/ASP.NET_Fundamentals/SimplePage/SimplePage/Views/Shared/Error.cshtml]

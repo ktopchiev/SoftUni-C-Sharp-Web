@@ -45,6 +45,7 @@ namespace SimplePage.Controllers
         /// Shows all products
         /// </summary>
         /// <returns></returns>
+        [ActionName("My-Products")]
         public IActionResult All()
         {
             return View(this.products);
