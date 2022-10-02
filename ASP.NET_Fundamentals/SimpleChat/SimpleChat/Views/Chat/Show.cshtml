@@ -1,0 +1,23 @@
+﻿@using ChatApp.Models
+@model ChatViewModel
+
+<h3>Messages: </h3>
+
+@if (Model.Messages != null)
+{
+	@foreach (var msg in Model.Messages)
+	{
+		<div class="card bg-light col-6">
+			<div class="card-body">
+				<blockquote class="blockquote mb-0">
+					<p>@msg.MessageText</p>
+					<footer class="blockquote-footer">@msg.Sender</footer>
+				</blockquote>
+			</div>
+		</div>
+	}
+}
+else
+{
+	<p>No messages yet!</p>
+}
