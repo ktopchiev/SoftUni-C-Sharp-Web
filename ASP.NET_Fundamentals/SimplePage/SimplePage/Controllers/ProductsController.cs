@@ -6,8 +6,14 @@ using System.Text.Json;
 
 namespace SimplePage.Controllers
 {
+    /// <summary>
+    /// Products controller
+    /// </summary>
     public class ProductsController : Controller
     {
+        /// <summary>
+        /// IEnumerable List of Products
+        /// </summary>
         private IEnumerable<ProductsViewModel> products =
             new List<ProductsViewModel>()
             {
@@ -35,11 +41,20 @@ namespace SimplePage.Controllers
             return View();
         }
 
+        /// <summary>
+        /// Shows all products
+        /// </summary>
+        /// <returns></returns>
         public IActionResult All()
         {
             return View(this.products);
         }
 
+
+        /// <summary>
+        /// Shows all products as json in browser
+        /// </summary>
+        /// <returns></returns>
         public IActionResult AllAsJson()
         {
             var options = new JsonSerializerOptions
@@ -50,6 +65,11 @@ namespace SimplePage.Controllers
             return Json(products, options);
         }
 
+
+        /// <summary>
+        /// Shows all products as text in browser
+        /// </summary>
+        /// <returns></returns>
         public IActionResult AllAsText()
         {
             string text = string.Empty;
@@ -63,6 +83,10 @@ namespace SimplePage.Controllers
             return Content(text);
         }
 
+        /// <summary>
+        /// Download all products as text file
+        /// </summary>
+        /// <returns></returns>
         public IActionResult AllAsTextFile()
         {
             StringBuilder sb = new StringBuilder();
@@ -76,6 +100,11 @@ namespace SimplePage.Controllers
             return File(Encoding.UTF8.GetBytes(sb.ToString().TrimEnd()), "text/plain");
         }
 
+        /// <summary>
+        /// Show product by id
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
         public IActionResult ById(int id)
         {
             var product = this.products.FirstOrDefault(i => i.Id == id);
