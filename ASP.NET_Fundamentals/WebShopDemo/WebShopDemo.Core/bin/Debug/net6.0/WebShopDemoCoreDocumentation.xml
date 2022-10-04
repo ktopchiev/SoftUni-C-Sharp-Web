@@ -26,6 +26,184 @@
             </summary>
             <param name="options"></param>
         </member>
+        <member name="T:WebShopDemo.Core.Data.Common.IRepository">
+            <summary>
+            Abstraction of repository access methods
+            </summary>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.All``1">
+            <summary>
+            All records in a table
+            </summary>
+            <returns>Queryable expression tree</returns>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.All``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            All records in a table
+            </summary>
+            <returns>Queryable expression tree</returns>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.AllReadonly``1">
+            <summary>
+            The result collection won't be tracked by the context
+            </summary>
+            <returns>Expression tree</returns>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.AllReadonly``1(System.Linq.Expressions.Expression{System.Func{``0,System.Boolean}})">
+            <summary>
+            The result collection won't be tracked by the context
+            </summary>
+            <returns>Expression tree</returns>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.GetByIdAsync``1(System.Object)">
+            <summary>
+            Gets specific record from database by primary key
+            </summary>
+            <param name="id">record identificator</param>
+            <returns>Single record</returns>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.AddAsync``1(``0)">
+            <summary>
+            Adds entity to the database
+            </summary>
+            <param name="entity">Entity to add</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.AddRangeAsync``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Ads collection of entities to the database
+            </summary>
+            <param name="entities">Enumerable list of entities</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.Update``1(``0)">
+            <summary>
+            Updates a record in database
+            </summary>
+            <param name="entity">Entity for record to be updated</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.UpdateRange``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Updates set of records in the database
+            </summary>
+            <param name="entities">Enumerable collection of entities to be updated</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.DeleteAsync``1(System.Object)">
+            <summary>
+            Deletes a record from database
+            </summary>
+            <param name="id">Identificator of record to be deleted</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.Delete``1(``0)">
+            <summary>
+            Deletes a record from database
+            </summary>
+            <param name="entity">Entity representing record to be deleted</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.Detach``1(``0)">
+            <summary>
+            Detaches given entity from the context
+            </summary>
+            <param name="entity">Entity to be detached</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.IRepository.SaveChangesAsync">
+            <summary>
+            Saves all made changes in trasaction
+            </summary>
+            <returns>Error code</returns>
+        </member>
+        <member name="T:WebShopDemo.Core.Data.Common.Repository">
+            <summary>
+            Implementation of repository access methods
+            for Relational Database Engine
+            </summary>
+            <typeparam name="T">Type of the data table to which 
+            current reposity is attached</typeparam>
+        </member>
+        <member name="P:WebShopDemo.Core.Data.Common.Repository.Context">
+            <summary>
+            Entity framework DB context holding connection information and properties
+            and tracking entity states 
+            </summary>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.DbSet``1">
+            <summary>
+            Representation of table in database
+            </summary>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.AddAsync``1(``0)">
+            <summary>
+            Adds entity to the database
+            </summary>
+            <param name="entity">Entity to add</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.AddRangeAsync``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Ads collection of entities to the database
+            </summary>
+            <param name="entities">Enumerable list of entities</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.All``1">
+            <summary>
+            All records in a table
+            </summary>
+            <returns>Queryable expression tree</returns>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.AllReadonly``1">
+            <summary>
+            The result collection won't be tracked by the context
+            </summary>
+            <returns>Expression tree</returns>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.Delete``1(``0)">
+            <summary>
+            Deletes a record from database
+            </summary>
+            <param name="entity">Entity representing record to be deleted</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.DeleteAsync``1(System.Object)">
+            <summary>
+            Deletes a record from database
+            </summary>
+            <param name="id">Identificator of record to be deleted</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.DeleteRange``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Deletes range of entities from database
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="entities"></param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.Detach``1(``0)">
+            <summary>
+            Detaches given entity from the context
+            </summary>
+            <param name="entity">Entity to be detached</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.Dispose">
+            <summary>
+            Disposing the context when it is not needed
+            Don't have to call this method explicitly
+            Leave it to the IoC container
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:WebShopDemo.Core.Data.Common.Repository.GetByIdAsync``1(System.Object)" -->
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.SaveChangesAsync">
+            <summary>
+            Saves all made changes in trasaction
+            </summary>
+            <returns>Error code</returns>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.Update``1(``0)">
+            <summary>
+            Updates a record in database
+            </summary>
+            <param name="entity">Entity for record to be updated</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Data.Common.Repository.UpdateRange``1(System.Collections.Generic.IEnumerable{``0})">
+            <summary>
+            Updates set of records in the database
+            </summary>
+            <param name="entities">Enumerable collection of entities to be updated</param>
+        </member>
         <member name="T:WebShopDemo.Core.Models.ProductDto">
             <summary>
             Product model
