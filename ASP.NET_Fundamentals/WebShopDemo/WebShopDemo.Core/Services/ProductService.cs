@@ -25,6 +25,7 @@ namespace WebShopDemo.Core.Services
         {
             config = _config;
         }
+
         /// <summary>
         /// Gets all products
         /// </summary>

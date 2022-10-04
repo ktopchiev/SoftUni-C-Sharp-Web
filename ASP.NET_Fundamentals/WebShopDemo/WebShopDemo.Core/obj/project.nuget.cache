@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UQiHivk40Vu2WBEqQXUTrfsHD9XfDvXHIGrC03WrFJOgcP9BpxR9MSw7h+alPjs9SHf1bmpwfyhoM33Ka9y8Nw==",
+  "dgSpecHash": "klh7s8Fh6EyzqQy1Zff0e+tZAvk0ne2CtVVEpKnSFUg5MIUAP7YW0ZSokAkKtp2sp+w58IYyZecVShGXZza44w==",
   "success": true,
   "projectFilePath": "D:\\SoftUni\\SoftUni-C-Sharp-Web\\ASP.NET_Fundamentals\\WebShopDemo\\WebShopDemo.Core\\WebShopDemo.Core.csproj",
   "expectedPackageFiles": [
@@ -28,6 +28,7 @@
     "C:\\Users\\karlo\\.nuget\\packages\\microsoft.entityframeworkcore.analyzers\\6.0.9\\microsoft.entityframeworkcore.analyzers.6.0.9.nupkg.sha512",
     "C:\\Users\\karlo\\.nuget\\packages\\microsoft.entityframeworkcore.design\\6.0.9\\microsoft.entityframeworkcore.design.6.0.9.nupkg.sha512",
     "C:\\Users\\karlo\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\6.0.9\\microsoft.entityframeworkcore.relational.6.0.9.nupkg.sha512",
+    "C:\\Users\\karlo\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\6.0.9\\microsoft.entityframeworkcore.tools.6.0.9.nupkg.sha512",
     "C:\\Users\\karlo\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\6.0.0\\microsoft.extensions.caching.abstractions.6.0.0.nupkg.sha512",
     "C:\\Users\\karlo\\.nuget\\packages\\microsoft.extensions.caching.memory\\6.0.1\\microsoft.extensions.caching.memory.6.0.1.nupkg.sha512",
     "C:\\Users\\karlo\\.nuget\\packages\\microsoft.extensions.configuration\\6.0.1\\microsoft.extensions.configuration.6.0.1.nupkg.sha512",

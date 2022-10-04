@@ -28,7 +28,29 @@ namespace WebShopDemo.Controllers
         public async Task<IActionResult> Index()
         {
             IEnumerable<ProductDto> products = await productService.GetAll();
+            ViewData["Title"] = "Products";
             return View(products);
+        }
+
+        [HttpGet]
+        public IActionResult Add()
+        {
+            var model = new ProductDto();
+            ViewData["Title"] = "Add new product";
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Add(ProductDto model)
+        {
+            ViewData["Title"] = "Add new product";
+
+            if (!ModelState.IsValid)
+            {
+                return View(model);
+            }
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }
