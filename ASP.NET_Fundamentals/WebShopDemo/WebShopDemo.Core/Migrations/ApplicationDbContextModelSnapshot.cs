@@ -278,6 +278,11 @@ namespace WebShopDemo.Core.Migrations
                         .HasColumnName("id")
                         .HasComment("Primary key");
 
+                    b.Property<bool>("IsActive")
+                        .HasColumnType("boolean")
+                        .HasColumnName("is_active")
+                        .HasComment("Product availability");
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50)

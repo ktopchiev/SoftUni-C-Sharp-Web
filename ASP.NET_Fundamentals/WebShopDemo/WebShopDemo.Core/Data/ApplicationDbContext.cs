@@ -25,10 +25,11 @@ namespace WebShopDemo.Core.Data
 
 		}
 
-		//protected override void OnModelCreating(ModelBuilder modelBuilder)
-		//{
+		protected override void OnModelCreating(ModelBuilder modelBuilder)
+		{
 
-		//}
+			base.OnModelCreating(modelBuilder);
+		}
 
 		public DbSet<Product> Products { get; set; }
 	}

@@ -15,6 +15,13 @@
             </summary>
             <returns>List of products</returns>
         </member>
+        <member name="M:WebShopDemo.Core.Contracts.IProductService.Add(WebShopDemo.Core.Models.ProductDto)">
+            <summary>
+            Add new product
+            </summary>
+            <param name="productDto">Product model</param>
+            <returns></returns>
+        </member>
         <member name="T:WebShopDemo.Core.Data.ApplicationDbContext">
             <summary>
             Application Db Context class
@@ -234,11 +241,18 @@
             Manipulates product data
             </summary>
         </member>
-        <member name="M:WebShopDemo.Core.Services.ProductService.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+        <member name="M:WebShopDemo.Core.Services.ProductService.#ctor(Microsoft.Extensions.Configuration.IConfiguration,WebShopDemo.Core.Data.Common.IRepository)">
             <summary>
             Inversion of control (IoC)
             </summary>
             <param name="_config">Application configuration</param>
+        </member>
+        <member name="M:WebShopDemo.Core.Services.ProductService.Add(WebShopDemo.Core.Models.ProductDto)">
+            <summary>
+            Add new product
+            </summary>
+            <param name="productDto">Product model</param>
+            <returns></returns>
         </member>
         <member name="M:WebShopDemo.Core.Services.ProductService.GetAll">
             <summary>

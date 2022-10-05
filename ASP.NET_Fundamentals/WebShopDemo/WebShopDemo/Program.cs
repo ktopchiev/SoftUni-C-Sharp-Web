@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebShopDemo.Core.Contracts;
 using WebShopDemo.Core.Data;
+using WebShopDemo.Core.Data.Common;
 using WebShopDemo.Core.Services;
 
 //*nai vajnata 4ast ot app-a e buildera
@@ -39,6 +40,7 @@ builder.Services.AddControllersWithViews();
 //*e vidimo, v ramkite na edin rikuest polu4avame edna isashta instanciq, po tozi nachin si ostava
 //*steitles za tozi rekuest si imame servisa
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<IRepository, Repository>();
 
 var app = builder.Build();
 
