@@ -56,10 +56,9 @@ namespace WebShopDemo.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Delete([FromForm]string id)
+        public async Task<IActionResult> Delete([FromForm]Guid id)
         {
-            Guid idGuid = Guid.Parse(id);
-            await productService.Delete(idGuid);
+            await productService.Delete(id);
             return RedirectToAction(nameof(Index));
         }
     }

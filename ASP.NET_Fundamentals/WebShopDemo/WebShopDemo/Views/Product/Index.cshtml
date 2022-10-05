@@ -26,7 +26,7 @@
                 <td class="table-borderless text-center"><button class="btn btn-warning text-black">Buy</button></td>
                 <td class="table-borderless text-center">
                     <form asp-action="Delete" asp-controller="Product" method="post">
-                        <input name="id" type="hidden" value="@item.Id.ToString()" />
+                        <input name="id" type="hidden" value="@item.Id" />
                         <button type="submit" class="btn btn-danger text-black">Delete</button>
                     </form>
                 </td>
