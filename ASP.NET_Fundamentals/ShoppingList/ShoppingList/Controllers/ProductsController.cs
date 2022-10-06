@@ -34,6 +34,11 @@ namespace ShoppingList.Controllers
 
         public IActionResult Add() => View();
 
+        /// <summary>
+        /// Adds new product to ShoppingListDb
+        /// </summary>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Add(ProductFormModel model)
         {
@@ -44,6 +49,28 @@ namespace ShoppingList.Controllers
 
             data.Products.Add(product);
             data.SaveChanges();
+
+            return RedirectToAction(nameof(All));
+        }
+
+        [HttpGet]
+        public IActionResult Edit(int id)
+        {
+            var product = data.Products.Find(id);
+
+            return View(new ProductFormModel()
+            {
+                Name = product.Name
+            });
+        }
+
+        [HttpPost]
+        public IActionResult Edit(int id, Product model)
+        {
+            var product = data.Products.Find(id);
+            product.Name = model.Name;
+
+            this.data.SaveChanges();
 
             return RedirectToAction(nameof(All));
         }
