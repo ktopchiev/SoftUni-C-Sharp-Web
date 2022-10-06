@@ -31,5 +31,21 @@ namespace ShoppingList.Controllers
 
             return View(products);
         }
+
+        public IActionResult Add() => View();
+
+        [HttpPost]
+        public IActionResult Add(ProductFormModel model)
+        {
+            var product = new Product()
+            {
+                Name = model.Name
+            };
+
+            data.Products.Add(product);
+            data.SaveChanges();
+
+            return RedirectToAction(nameof(All));
+        }
     }
 }

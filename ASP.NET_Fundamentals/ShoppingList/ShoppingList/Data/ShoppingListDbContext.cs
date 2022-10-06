@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using ShoppingList.Models;
 
 namespace ShoppingList.Data
 {
@@ -30,5 +31,7 @@ namespace ShoppingList.Data
                 .HasMany(p => p.ProductNotes)
                 .WithOne(r => r.Product);
         }
+
+        public DbSet<ShoppingList.Models.ProductViewModel> ProductViewModel { get; set; }
     }
 }
