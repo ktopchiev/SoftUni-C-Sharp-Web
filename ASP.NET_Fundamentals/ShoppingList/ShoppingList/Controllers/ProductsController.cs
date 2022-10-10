@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using ShoppingList.Data;
 using ShoppingList.Models;
+using System.Net;
 
 namespace ShoppingList.Controllers
 {
@@ -64,6 +65,12 @@ namespace ShoppingList.Controllers
             });
         }
 
+        /// <summary>
+        /// Edit product in ShoppingListDb
+        /// </summary>
+        /// <param name="id"></param>
+        /// <param name="model"></param>
+        /// <returns></returns>
         [HttpPost]
         public IActionResult Edit(int id, Product model)
         {
@@ -71,6 +78,21 @@ namespace ShoppingList.Controllers
             product.Name = model.Name;
 
             this.data.SaveChanges();
+
+            return RedirectToAction(nameof(All));
+        }
+
+        /// <summary>
+        /// Deletes product from ShoppingListDb
+        /// </summary>
+        /// <param name="id"></param>
+        /// <returns></returns>
+
+        [HttpPost, ActionName("Delete")]
+        public IActionResult DeleteConfirmed(Product product)
+        {
+            data.Products.Remove(product);
+            data.SaveChanges();
 
             return RedirectToAction(nameof(All));
         }
