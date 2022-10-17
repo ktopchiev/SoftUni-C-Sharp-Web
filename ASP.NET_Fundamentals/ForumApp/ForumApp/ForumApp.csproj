@@ -11,16 +11,30 @@
         <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="6.0.9" />
         <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.9" />
         <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="6.0.9" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.9" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.10" />
         <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.9" />
     </ItemGroup>
 
     <ItemGroup>
       <None Remove="app.db" />
+      <None Remove="Migrations\**" />
     </ItemGroup>
 
     <ItemGroup>
       <Folder Include="Data\Migrations" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Migrations\**" />
+      <Compile Remove="Views\Posts\All.cshtml.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove="Migrations\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="Migrations\**" />
     </ItemGroup>
 
 </Project>
