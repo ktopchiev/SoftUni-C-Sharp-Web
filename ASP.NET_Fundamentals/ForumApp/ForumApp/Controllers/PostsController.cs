@@ -1,4 +1,5 @@
 ﻿using ForumApp.Data;
+using ForumApp.Data.Entities;
 using ForumApp.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -25,5 +26,26 @@ public class PostsController : Controller
             .ToList();
 
         return View(posts);
+    }
+
+    [HttpGet]
+    public IActionResult Add()
+    {
+        return View();
+    }
+
+    [HttpPost]
+    public IActionResult Add(PostFormModel model)
+    {
+        var post = new Post()
+        {
+            Title = model.Title,
+            Content = model.Content
+        };
+
+        this.data.Posts.Add(post);
+        this.data.SaveChanges();
+
+        return RedirectToAction(nameof(All));
     }
 }
