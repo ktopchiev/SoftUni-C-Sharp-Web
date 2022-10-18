@@ -73,4 +73,15 @@ public class PostsController : Controller
 
         return RedirectToAction(nameof(All));
     }
+    
+    [HttpPost]
+    public IActionResult Delete(int id)
+    {
+        var post = this.data.Posts.Find(id);
+        
+        this.data.Posts.Remove(post);
+        this.data.SaveChanges();
+        
+        return RedirectToAction(nameof(All));
+    }
 }
