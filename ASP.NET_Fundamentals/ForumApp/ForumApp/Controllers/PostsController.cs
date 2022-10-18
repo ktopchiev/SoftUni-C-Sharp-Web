@@ -48,4 +48,29 @@ public class PostsController : Controller
 
         return RedirectToAction(nameof(All));
     }
+
+    [HttpGet]
+    public IActionResult Edit(int id)
+    {
+        var post = this.data.Posts.Find(id);
+
+        return View(new PostFormModel()
+        {
+            Title = post.Title,
+            Content = post.Content
+        });
+    }
+
+    [HttpPost]
+    public IActionResult Edit(int id, PostFormModel model)
+    {
+        var post = this.data.Posts.Find(id);
+
+        post.Title = model.Title;
+        post.Content = model.Content;
+
+        this.data.SaveChanges();
+
+        return RedirectToAction(nameof(All));
+    }
 }
