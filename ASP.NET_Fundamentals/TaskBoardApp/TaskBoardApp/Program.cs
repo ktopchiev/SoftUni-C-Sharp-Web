@@ -51,4 +51,3 @@ app.MapRazorPages();
 
 app.Run();
 
-//some comment
